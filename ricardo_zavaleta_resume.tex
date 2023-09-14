@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://rzavalet.github.io/}{\Large Ricardo Zavaleta}} & Email : \href{mailto:rj.zavaleta@gmail.com}{rj.zavaleta@gmail.com}\\
+  \href{http://rzavalet.github.io/}{http://rzavalet.github.io} %& Mobile : \href{tel:+11234567890}{+1-123-456-7890} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CINVESTAV}{Zapopan, Jalisco, Mexico}
+      {Master of Science in Electrical Engineering; GPA: 98/100}{2016 -- 2020}
+    \resumeSubheading
+      {UNAM}{Mexico City, Mexico}
+      {Bachelor in Computer Engineering; GPA: 97/100}{2006 -- 2010}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Oracle - TimesTen In-memory Database}{Zapopan, Jalisco, Mexico}
+      {(-, Senior, Principal, Consulting) Member of Technical Staff}{August 2011 - Present}
+      \resumeItemListStart
+        \resumeItem{Scaleout Cache}
+          {Design and implementation of Cache support for TimesTen Scaleout. Team effort.}
+        \resumeItem{Element Duplication}
+          {Design and implementation of shard recovery using duplication for the TimesTen Scaleout product. Team effort.}
+        \resumeItem{Cache Connection Pool}
+          {Design and implementation of internal connection pool to efficiently manage Oracle connections in TimesTen. Team effort.}
+        \resumeItem{ADG Support}
+          {Design and implementation of Caching support for HA backend databases. Team effort.}
+        \resumeItem{Import of Oracle External Tables in TimesTen}
+          {Design and implementation. Not released. Team effort.}
+        \resumeItem{Customer Support}
+          {Collaboration with Oracle Support Team to resolve customer escalations of different severities.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {BADAK/Hildebrando/Mexican Stock Exchange}{Mexico City, Mexico}
+      {Software Engineer}{May 2011 - July 2011}
+      \resumeItemListStart
+        \resumeItem{Electronic Board}
+          {Implementation of a new system for the electronic board of prices used by the Mexican Stock Exchange.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IBM}{Mexico City, Mexico}
+      {Internship}{August 2010 - December 2010}
+      \resumeItemListStart
+        \resumeItem{Windows servers administration}
+          {Collaborated on the administration of Servers for different companies such as Metlife and Danone at Integrated Technology Delivery department at IBM.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LADAI (Wireless and Web Applications Development Lab), UNAM}{Mexico City, Mexico}
+      {Internship}{Jan 2009 - June 2011}
+      \resumeItemListStart
+        \resumeItem{Framework Evaluation}
+          {Symfony framework for PHP, Plaza Mobile Widgets Client SDK by Qualcomm, Android SDK, iOS SDK}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Oracle Cloud Infrastructure Foundations 2021 Associate}
+      {The Oracle Cloud Infrastructure (OCI) Foundations certification is intended for individuals looking to demonstrate fundamental knowledge of public cloud services provided by Oracle Cloud Infrastructure.}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Prototype of a Real-Time Database System}
+      {MSc Thesis project. Implementation of a Client/Server application that simulates stock trading to evaluate Database Performance on top of an RTOS.}
+    \resumeSubItem{Distributed Snake Game}
+      {Android Application for the Distributed Systems course. A version of the Snake game where the world spanned multiple android devices. The player was able to play from any of such devices. The code was adapted from the sample provided in the Android SDK documentation.}
+    \resumeSubItem{GUI application for managing any MySQL database}
+      {Team project written in Visual Basic. It allowed creating and managing MySQL databases and objects. The main purpose was to understand and use the system tables.}
+    \resumeSubItem{Modelometro}
+      {Development of an iOS application for the Explora Modelo Contest. Team project, 2 people. The application was an attempt to measure the equilibrium of a person in order to determine the amount of alcohol in the blood. Because of the novel/funny idea, we won the 1st place in the contest.}
+  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {C, Shell Scripting, Perl Scripting, Python, Java, PHP}
+    \resumeSubItem{Operating Systems}
+      {Linux, Windows}
+    \resumeSubItem{Databases}
+      {TimesTen, Oracle, Berkeley DB, MySQL, Postgres}
+    \resumeSubItem{Version Control}
+      {Git}
+  \resumeSubHeadingListEnd
+
+
+%
+%--------LANGUAGES------------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Spanish}{Native}
+    \resumeSubItem{English}{Fluent}
+    \resumeSubItem{German}{Basic understanding}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
